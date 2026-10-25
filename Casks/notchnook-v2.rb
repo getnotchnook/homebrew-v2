@@ -1,6 +1,6 @@
 cask "notchnook-v2" do
-  version "2.0,2001"
-  sha256 "ad966af882c82b05bfdd3fb93a70d480489f36592c2acd13313da6e047b3f4ee"
+  version "2.0,2011"
+  sha256 "97e61c73ab3aea3cba6121f89bda57ec41313c37b5713fbfc6d2e76404bb74db"
 
   url "https://notchnook-v2-licensing.lo-cafe-public.workers.dev/updates/v2/NotchNook-v2-#{version.csv.first}-build#{version.csv.second}.dmg"
   name "NotchNook 2.0"
