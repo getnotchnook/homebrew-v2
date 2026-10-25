@@ -1,9 +1,9 @@
 cask "notchnook-v2" do
-  version "2.0,2011"
-  sha256 "97e61c73ab3aea3cba6121f89bda57ec41313c37b5713fbfc6d2e76404bb74db"
+  version "2.0,2017"
+  sha256 "6f227e6ff4e2fc6aadbe218a7fd188a0065c96153c9f5a502c379109fcdeefb8"
 
   url "https://notchnook-v2-licensing.lo-cafe-public.workers.dev/updates/v2/NotchNook-v2-#{version.csv.first}-build#{version.csv.second}.dmg"
-  name "NotchNook 2.0"
+  name "NotchNook Pro"
   desc "Notch workspace for Mac"
   homepage "https://getnotchnook.com/"
 

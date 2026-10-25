@@ -1,4 +1,4 @@
-# NotchNook 2.0
+# NotchNook Pro
 
 Install:
 
