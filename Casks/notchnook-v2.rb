@@ -1,10 +1,17 @@
 cask "notchnook-v2" do
-  version "2.0,2011"
-  sha256 "97e61c73ab3aea3cba6121f89bda57ec41313c37b5713fbfc6d2e76404bb74db"
+  version "2.0,2021"
+  sha256 "4ef1bb077659f0747749a27394baf8f160651c885a8b5c2afd57376d2856b32c"
+
+  on_sonoma do
+    if MacOS.full_version < MacOSVersion.new("14.6")
+      disable! date:    "2026-10-23",
+               because: "requires macOS 14.6 or later"
+    end
+  end
 
   url "https://notchnook-v2-licensing.lo-cafe-public.workers.dev/updates/v2/NotchNook-v2-#{version.csv.first}-build#{version.csv.second}.dmg"
   name "NotchNook Pro"
-  desc "Notch workspace for Mac"
+  desc "Notch workspace"
   homepage "https://getnotchnook.com/"
 
   livecheck do
@@ -17,10 +24,6 @@ cask "notchnook-v2" do
   depends_on macos: :sonoma
 
   app "NotchNook 2.0.app"
-
-  on_sonoma do
-    disable! date: "2026-10-23", because: "requires macOS 14.6 or later" if MacOS.version < MacOSVersion.new("14.6")
-  end
 
   uninstall quit: "com.getnotchnook.NotchNookPro"
 end
