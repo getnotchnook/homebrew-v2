@@ -1,6 +1,6 @@
 cask "notchnook-v2" do
-  version "2.0,2058"
-  sha256 "33383723ebedfb6acb4b01f9c03fae954505f299573c5da0fc98d67f796c51c7"
+  version "2.0.1,2061"
+  sha256 "2505c54cd60b6486c95a0379fecea85f168dbb253c9fde8b48e730e7c61ea0e6"
 
   on_sonoma do
     if MacOS.full_version < MacOSVersion.new("14.6")
