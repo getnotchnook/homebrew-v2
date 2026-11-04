@@ -9,13 +9,13 @@ cask "notchnook-v2" do
     end
   end
 
-  url "https://notchnook-v2-licensing.lo-cafe-public.workers.dev/updates/v2/NotchNook-Pro-build#{version.csv.second}.dmg"
+  url "https://getnotchnook.com/pro-updates/v2/NotchNook-Pro-build#{version.csv.second}.dmg"
   name "NotchNook Pro"
   desc "Notch workspace"
   homepage "https://getnotchnook.com/"
 
   livecheck do
-    url "https://notchnook-v2-licensing.lo-cafe-public.workers.dev/updates/v2/appcast.xml"
+    url "https://getnotchnook.com/pro-updates/v2/appcast.xml"
     strategy :sparkle
   end
 
